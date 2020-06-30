@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="menu">
+        <div class="container">
+            <div class="grid-8">
+                <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+            </div>
+            <div class="grid-8">
+                <nav class="menu-nav">
+                    <ul>
+                        <li><a href="#">secretaria</a></li>
+                        <li><a href="index.html" class="menu-selecionado">notas</a></li>
+                        <li><a href="#">simulados</a></li>
+                        <li><a href="#">contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="turmas">
+        <div class="container">
+            <div class="grid-7">
+              <a href="#turmas" onclick="turma1()">turma 1</a>
+              <a href="#turmas" onclick="turma2()">turma 2</a>
+            </div>
+            <div>
+                <img src="livros.png" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="turmasecao" class="notas some">
+        <h1 id="turmas"></h1>
+        <div class="container"> 
+            <div class="grid-16">
+                <table id="tabela" class="tabela">
+                    <tr>
+                        <td class="tabletopic">Aluno</td>
+                        <td class="tabletopic">Nota 1</td>
+                        <td class="tabletopic">Nota 2</td>
+                    </tr>
+                    <tr>
+                        <td id="aluno001"></td>
+                        <td id="nota1"></td>
+                        <td id="nota2"></td>
+                    </tr>
+                    <tr>
+                        <td id="aluno002"></td>
+                        <td id="nota3"></td>
+                        <td id="nota4"></td>
+                    </tr>
+                    <tr>
+                        <td id="aluno003"></td>
+                        <td id="nota5"></td>
+                        <td id="nota6"></td>
+                    </tr>
+                    <tr>
+                        <td id="aluno004"></td>
+                        <td id="nota7"></td>
+                        <td id="nota8"></td>
+                    </tr>
+                    <tr>
+                        <td id="aluno005"></td>
+                        <td id="nota9"></td>
+                        <td id="nota10"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </section>
+<script src="script.js"></script>
+</body>
+</html>

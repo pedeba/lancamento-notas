@@ -1,0 +1,157 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.container::before, .container::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.grid-7, .grid-8, .grid-16 {
+    float: left;
+    display: block;
+    margin: 0 10px;
+}
+
+.grid-7 {width: calc(43.75% - 20px);}
+.grid-8 {width: calc(50% - 20px);}
+.grid-16 {width: calc(100% - 20px);}
+
+
+
+.menu {
+    background: #110273;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.menu-nav {
+    float: right;
+    margin-top: 25px;
+}
+
+.menu-nav a {
+    padding: 10px 0;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+
+}
+
+.menu-nav ul {
+    list-style: none;
+}
+
+.menu-nav ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 25px;
+    letter-spacing: .1em;
+    font-weight: bold;
+}
+
+.menu-nav .menu-selecionado {
+    color: #F27F1B;
+}
+
+
+.turmas {
+    margin-top: 90px;
+}
+
+.turmas a {
+    display: block;
+    text-align: center;
+    background: #F27F1B;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 48px;
+    color: white;
+    font-weight: bold;
+    margin-top: 110px;
+    padding: 60px 0;
+    border-radius: 20px;
+    
+} 
+
+.turmas a:hover {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.507);
+}
+
+.turmas img {
+    height: 610px;
+    opacity: 50%;
+    margin-top: 60px;
+    position: relative;
+    left: 50px;
+}
+
+.titulo {
+    height: 600px;
+}
+
+.notas {
+    background: #110273;
+    padding: 40px 0;
+    margin-top: 100px;
+}
+
+.notas h1 {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 48px;
+    letter-spacing: .1em;
+    margin-bottom: 40px;
+}
+
+.tabela {
+    margin: 0 auto;
+    font-size: 40px;
+    color: white;
+    border: 3px solid white;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tabela tr td {
+    border: 3px solid white;
+    padding: 30px;
+}
+
+.tabletopic {
+    color: #F27F1B;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+.some {
+    display: none;
+}
+
